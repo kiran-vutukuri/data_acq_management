@@ -24,3 +24,27 @@ Welcome to the GitHub repository for KatzBot, an innovative chatbot designed to 
 Ensure you have Python 3.x installed on your machine. You can install Python by downloading it from [python.org](https://www.python.org/downloads/). The code can also be run on Google collab. In cases on some LLMs , extra GPU might be required.
 
 
+<div align="center">
+    <a><img width="720" src="images/face-recognition-attendance-system.jpg" alt="soft"></a>
+</div>
+
+# KatzBot - Enhancing University Community Communication
+
+## Table of Contents
+
+- [Course Attendance System with Facial Recognition](#course-attendance-system-with-facial-recognition)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+      - [Project Description](#project-description)
+      - [Website](#website-screenshots)
+  - [Datasets](#datasets)
+      - [Raw Images](#raw-images-data-collection)
+      - [Processed Images ](#processed-images)
+  - [Method](#method)
+      - [RetinaFace](#retinaface)
+      - [Face Recognition](#face-recognition)
+  - [Results](#results)
+  - [Technical Information](#technical-information)
+  - [Benefits](#benefits)
+  - [Applications](#applications)
+  - [Citations](#citations)
