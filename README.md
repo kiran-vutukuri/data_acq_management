@@ -37,12 +37,38 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
   - [Introduction](#introduction)
       - [Project Description](#project-description)
       - [Website](#website-screenshots)
+  -[Requirements:](#Requirements)
   - [Dataset](#datasets)
       - [QA_Pairs](#raw-images-data-collection)
       - [Sentence_Completion_Pairs](#processed-images)
   - [Method](#method)
       - [RetinaFace](#retinaface)
+      - 
       - [Face Recognition](#face-recognition)
   - [Results](#results)
   - [Technical Information](#technical-information)
   - [Citations](#citations)
+## Introduction
+
+### Project Description
+
+Enhancing communication within university communities is imperative to meet the diverse needs of stakeholders, including prospective and current students, alumni, and other information seekers. Current academic chatbot systems often exhibit imprecise communication, necessitating tailored solutions. To address this, we propose KatzBot, leveraging Katz generative pre-trained transformer (KatzGPT), a sophisticated custom large language model (LLM), to effectively bridge precision gaps in existing chatbot systems and academic universities. Moreover, we have curated two datasets: 6,280 sentence-completion pairs and 7,330 question-answer pairs. We train KatzGPT on the sentence-completion pairs to expand its knowledge base, followed by training on the question-answer pairs to enhance its accuracy. Through extensive experimentation, KatzGPT demonstrates superior performance compared to state-of-the-art methods on our dataset. In addition, our KatzBot system enables a concise and effective interface to enhance the communication between users and the KatzGPT model.
+
+## Method
+In this section, we detail the methodology employed to develop the Custom Language
+Model (CLM) and the training process involved.
+
+### Data Preparation:
+The dataset comprises question-answer pairs from academic contexts,
+such as university-related inquiries and responses. Each data item consists of a question
+and its corresponding answer.
+### Tokenization: 
+The data is tokenized using the AutoTokenizer from the Hugging Face
+Transformers library. The tokenizer encodes each question and answer text into token
+indices, ensuring compatibility with the model architecture.
+
+### Dataset Initialization:
+The tokenized data is organized into a custom PyTorch Dataset
+subclass, named QADataset. This dataset prepares input-output pairs for training the CLM.
+Each data item includes input token IDs and corresponding label token IDs, representing
+the next token prediction task
