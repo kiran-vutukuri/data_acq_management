@@ -7,12 +7,11 @@
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
       - [Project Description](#project-description)
-      - [Website](#website-screenshots)
   -[Requirements:](#Requirements)
   - [Dataset](#datasets)
       - [Pre_Processsing_Data](#Pre-Processing-Data)
-      - [Sentence_Completion_Pairs](#processed-images)
-      - [QA_Pairs](#raw-images-data-collection)
+      - [Sentence_Completion_Pairs](#Sentence-completion-pairs)
+      - [QA_Pairs](#QA-Pairs)
   - [Method](#method)
       - [Data_Preparation](#Data-Preparation)
       - [Tokenization](Tokenization)
@@ -93,7 +92,13 @@ measures the long-form coherence of generated texts.
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | What career services does the university provide to its students?                                | The university offers services to its student body.                                                                                                                                      | The university provides career services that include personalized counseling, career planning, and access to professional networks.                                                                                           | The university provides career services to help students find employment after graduation. These services include resume building, interview preparation, job search strategies, and networking opportunities. | Access to professional mentors and career coaches. Opportunities for internships, STEM OPT, and career opportunities through the Career Center.                              |
 | Can you share information on internship opportunities for students?                             | Internships are primarily during the summer, but you can also consider internships in New York, the financial capital of the world, or on an individual basis.                                                                                    | Yes, there are numerous internship opportunities available for students, both in the U.S. and in Israel, through the Yeshiva University Israel Center.                                                                     | Yes, KatzBot can provide information on internship opportunities for students. What department are you interested in?                                                                               | The program offers internship opportunities that give students industry experience and valuable career skills.                                                                |
-| What are the basic admission requirements for this university for Data Analytics?                | The basic admission rules for this college program include a minimum GPA of 3.2, an SAT score of 1460 or an ACT score of 32, and approval from their high school administration.                                                                           | The basic admission requirements for this university for Data Analytics include a bachelors degree with a strong mathematical and programming background.                                                                       | The basic admission requirements include a bachelors degree from an accredited college or university, a minimum GPA of 3.0, and a minimum grade of Bplus in the prerequisite courses.           | Bachelors degree, one year of related work experience, minimum grade point average of 3.0 on a 4.0 scale, or minimum grade of B in prerequisite courses.                      |
+| What are the basic admission requirements for this university for Data Analytics?                | The basic admission rules for this college program include a minimum GPA of 3.2, an SAT score of 1460 or an ACT score of 32, and approval from their high school administration.                                                                           | The basic admission requirements for this university for Data Analytics include a bachelors degree with a strong mathematical and programming background.                                                                       | The basic admission requirements include a bachelors degree from an accredited college or university, a minimum GPA of 3.0, and a minimum grade of Bplus in the prerequisite courses.           | Bachelors degree, one year of related work experience, minimum grade point average of 3.0 on a 4.0 scale, or minimum grade of B in prerequisite courses. 
+
+## Citations:
+- Nur Syahirah Ahmad, Mohd Hamim Sanusi, Mohd Helmy Abd Wahab, Aida Mustapha, Zainal Abidin Sayadi, and Mohd Zainuri Saringat. "Conversational bot for pharmacy: a natural language approach." In 2018 IEEE conference on open systems (ICOS), pp. 76–79. IEEE, 2018.
+- V. Arulmangainayaki, M. Harini, M. Keerthiga, and M. Deva Priya. "Intelligent chatbot for medical assistance in rural areas." International Journal of Innovative Technology and Exploring Engineering, 9, 2020.
+- R. G. Athreya, A. C. Ngonga Ngomo, and R. Usbeck. "Enhancing community interactions with data-driven chatbots-the dbpedia chatbot." 2018.
+
 
 
 
