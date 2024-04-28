@@ -42,9 +42,9 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
       - [QA_Pairs](#raw-images-data-collection)
       - [Sentence_Completion_Pairs](#processed-images)
   - [Method](#method)
-      - [RetinaFace](#retinaface)
-      - 
-      - [Face Recognition](#face-recognition)
+      - [Data_Preparation](#Data-Preparation)
+      - [Tokenization](Tokenization)
+      - [Dataset_Initialization](#fDataset-Initialization)
   - [Results](#results)
   - [Technical Information](#technical-information)
   - [Citations](#citations)
