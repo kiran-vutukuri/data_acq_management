@@ -1,10 +1,4 @@
 
-Enhancing communication within university communities is imperative to meet the diverse needs of stakeholders, including prospective and current students, alumni, and other information seekers. Current academic chatbot systems often exhibit imprecise communication, necessitating tailored solutions. To address this, we propose KatzBot, leveraging Katz generative pre-trained transformer (KatzGPT), a sophisticated custom large language model (LLM), to effectively bridge precision gaps in existing chatbot systems and academic universities. Moreover, we have curated two datasets: 6,280 sentence-completion pairs and 7,330 question-answer pairs. We train KatzGPT on the sentence-completion pairs to expand its knowledge base, followed by training on the question-answer pairs to enhance its accuracy. Through extensive experimentation, KatzGPT demonstrates superior performance compared to state-of-the-art methods on our dataset. In addition, our KatzBot system enables a concise and effective interface to enhance the communication between users and the KatzGPT model. The source code can be found in github.
-
-
-# KatzBot - Enhancing University Community Communication
-
-Welcome to the GitHub repository for KatzBot, an innovative chatbot designed to enhance communication within university communities. KatzBot is powered by KatzGPT, a custom-trained large language model that bridges the precision gaps in existing academic chatbot systems.
 
 ## Features
 - **Dual Training Datasets**: Utilizes 6,280 sentence-completion pairs and 7,330 question-answer pairs to improve knowledge base and accuracy.
@@ -39,8 +33,9 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
       - [Website](#website-screenshots)
   -[Requirements:](#Requirements)
   - [Dataset](#datasets)
-      - [QA_Pairs](#raw-images-data-collection)
+      - [Pre_Processsing_Data](#Pre-Processing-Data)
       - [Sentence_Completion_Pairs](#processed-images)
+      - [QA_Pairs](#raw-images-data-collection)
   - [Method](#method)
       - [Data_Preparation](#Data-Preparation)
       - [Tokenization](Tokenization)
@@ -53,8 +48,32 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
 ### Project Description
 
 Enhancing communication within university communities is imperative to meet the diverse needs of stakeholders, including prospective and current students, alumni, and other information seekers. Current academic chatbot systems often exhibit imprecise communication, necessitating tailored solutions. To address this, we propose KatzBot, leveraging Katz generative pre-trained transformer (KatzGPT), a sophisticated custom large language model (LLM), to effectively bridge precision gaps in existing chatbot systems and academic universities. Moreover, we have curated two datasets: 6,280 sentence-completion pairs and 7,330 question-answer pairs. We train KatzGPT on the sentence-completion pairs to expand its knowledge base, followed by training on the question-answer pairs to enhance its accuracy. Through extensive experimentation, KatzGPT demonstrates superior performance compared to state-of-the-art methods on our dataset. In addition, our KatzBot system enables a concise and effective interface to enhance the communication between users and the KatzGPT model.
+### Dataset
 
-## Method
+## Pre Processing Data
+We preprocessed the data using regex and custom parsing techniques, standardizing sentences and tokenizing them. We removed duplicates and noise, organizing the dataset into sentence and question-answer pairs. Finally, we stored the data in CSV and JSON formats, ensuring compliance with privacy laws and creating a clean, structured dataset for chatbot development.
+
+## Sentence Completion Pair
+We automated text segmentation into related sentence pairs, each column containing one sentence. Scripts were used to detect and remove nonsensical text and unwanted characters, followed by a manual review for accuracy. This effort yielded a dataset of over 6,400 related sentence pairs.
+##  Sentence Completion Dataset Sample
+
+| Sentence 1                                                                                     | Sentence 2                                                                                                                                                             |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Accommodation is allocated on a first-come, first-served basis.                              | Alternatively, you may consider living in New Jersey near bus routes that provide an easy commute to campus.                                                           |
+| It is prohibited to work without first obtaining CPT authorization.                           | Please be patient during the processing time for OPT applications, as they cannot be expedited.                                                                       |
+
+## QA Pairs
+We employed an automated script to process the text file, generating numerous question-and-answer pairs tailored for the chatbot. Additionally, we manually crafted additional pairs addressing common queries from new students. This effort resulted in a dataset of 7,334 question-and-answer pairs, enhancing quality and coverage.
+## QA Dataset Sample
+
+| Question                                                                                       | Answer                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| What criteria are considered for successful Honors applicants?                                | Offers of admission are contingent on a student submitting an Intent to Enroll Form by the May 1st deadline. Enrollment in another university will be considered a forfeiture of Honors admission and scholarship. |
+| What is the critical deadline students must meet to secure their admission and scholarship?   | Offers of admission are contingent on a student submitting an Intent to Enroll Form by the May 1st deadline. Enrollment in another university will be considered a forfeiture of Honors admission and scholarship. |
+| What are the average criteria for the current Honors cohort in terms of GPA, SAT, and ACT scores? | The current Honors cohort averages a GPA of 94, SAT score of 1460, and ACT score of 32.                                                                                      |
+
+
+## Methods
 In this section, we detail the methodology employed to develop the Custom Language
 Model (CLM) and the training process involved.
 
