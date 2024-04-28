@@ -1,27 +1,4 @@
 
-
-## Features
-- **Dual Training Datasets**: Utilizes 6,280 sentence-completion pairs and 7,330 question-answer pairs to improve knowledge base and accuracy.
-- **Existing LLM Training**: Leveraging existing LLMs(GPT2, Llama2, Mistral), using our created datasets to create a chatbot.
-- **Custom Language Model**: Leveraging KatzGPT, a pre-trained transformer model tailored for academic environments.
-
-
-## Repository Contents
-
-- `/html`: HTML interface for interacting with KatzBot.
-- `/code`: Includes all necessary code for training and deploying KatzGPT and KatzBot systems.
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have Python 3.x installed on your machine. You can install Python by downloading it from [python.org](https://www.python.org/downloads/). The code can also be run on Google collab. In cases on some LLMs , extra GPU might be required.
-
-
-<div align="center">
-    <a><img width="720" src="images/face-recognition-attendance-system.jpg" alt="soft"></a>
-</div>
-
 # KatzBot - Enhancing University Community Communication
 
 ## Table of Contents
@@ -41,7 +18,6 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
       - [Tokenization](Tokenization)
       - [Dataset_Initialization](#fDataset-Initialization)
   - [Results](#Results)
-  - [Technical Information](#technical-information)
   - [Citations](#citations)
 ## Introduction
 
