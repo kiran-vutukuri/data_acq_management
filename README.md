@@ -53,18 +53,18 @@ Enhancing communication within university communities is imperative to meet the 
 ## Pre Processing Data
 We preprocessed the data using regex and custom parsing techniques, standardizing sentences and tokenizing them. We removed duplicates and noise, organizing the dataset into sentence and question-answer pairs. Finally, we stored the data in CSV and JSON formats, ensuring compliance with privacy laws and creating a clean, structured dataset for chatbot development.
 
-## Sentence Completion Pair
+### Sentence Completion Pair
 We automated text segmentation into related sentence pairs, each column containing one sentence. Scripts were used to detect and remove nonsensical text and unwanted characters, followed by a manual review for accuracy. This effort yielded a dataset of over 6,400 related sentence pairs.
-##  Sentence Completion Dataset Sample
+###  Sentence Completion Dataset Sample
 
 | Sentence 1                                                                                     | Sentence 2                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Accommodation is allocated on a first-come, first-served basis.                              | Alternatively, you may consider living in New Jersey near bus routes that provide an easy commute to campus.                                                           |
 | It is prohibited to work without first obtaining CPT authorization.                           | Please be patient during the processing time for OPT applications, as they cannot be expedited.                                                                       |
 
-## QA Pairs
+### QA Pairs
 We employed an automated script to process the text file, generating numerous question-and-answer pairs tailored for the chatbot. Additionally, we manually crafted additional pairs addressing common queries from new students. This effort resulted in a dataset of 7,334 question-and-answer pairs, enhancing quality and coverage.
-## QA Dataset Sample
+### QA Dataset Sample
 
 | Question                                                                                       | Answer                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
