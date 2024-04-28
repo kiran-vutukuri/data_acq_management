@@ -45,7 +45,7 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
       - [Data_Preparation](#Data-Preparation)
       - [Tokenization](Tokenization)
       - [Dataset_Initialization](#fDataset-Initialization)
-  - [Results](#results)
+  - [Results](#Results)
   - [Technical Information](#technical-information)
   - [Citations](#citations)
 ## Introduction
@@ -72,3 +72,25 @@ The tokenized data is organized into a custom PyTorch Dataset
 subclass, named QADataset. This dataset prepares input-output pairs for training the CLM.
 Each data item includes input token IDs and corresponding label token IDs, representing
 the next token prediction task
+
+## Results
+In our comparative analysis detailed in the table below, we assess the performance of several
+Large Language Models (LLMs), highlighting our in-house developed KatzGPT model.
+This evaluation benchmarks the Rouge Scores, focusing on particularly Rouge-L, which
+measures the long-form coherence of generated texts.
+| Model                | Rouge-1 | Rouge-2 | Rouge-L |
+|----------------------|---------|---------|---------|
+| KatzGPT (Deepa)      | 0.17    | 0.028   | 0.15    |
+| KatzGPT (Haider)     | 0.05    | 0.39    | 0.10    |
+| KatzGPT (Shashidhar) | 0.24    | 0.10    | 0.20    |
+| Llama2 3B            | 0.23    | 0.07    | 0.20    |
+| Microsoft Phi 1.5    | 0.26    | 0.10    | 0.24    |
+| Llama2 7B            | 0.28    | 0.12    | 0.25    |
+| KatzGPT (Sahil)      | 0.27    | 0.15    | 0.25    |
+| Microsoft Phi2       | 0.34    | 0.15    | 0.31    |
+| Mistral 7B Instruct  | 0.43    | 0.20    | 0.33    |
+| GPT-2                | 0.45    | 0.32    | 0.43    |
+
+
+
+
