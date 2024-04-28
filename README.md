@@ -32,19 +32,17 @@ Ensure you have Python 3.x installed on your machine. You can install Python by 
 
 ## Table of Contents
 
-- [Course Attendance System with Facial Recognition](#course-attendance-system-with-facial-recognition)
+- [KatzBot - Enhancing University Community Communication(#KatzBot-Enhancing-University-Community-Communication)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
       - [Project Description](#project-description)
       - [Website](#website-screenshots)
-  - [Datasets](#datasets)
-      - [Raw Images](#raw-images-data-collection)
-      - [Processed Images ](#processed-images)
+  - [Dataset](#datasets)
+      - [QA_Pairs](#raw-images-data-collection)
+      - [Sentence_Completion_Pairs](#processed-images)
   - [Method](#method)
       - [RetinaFace](#retinaface)
       - [Face Recognition](#face-recognition)
   - [Results](#results)
   - [Technical Information](#technical-information)
-  - [Benefits](#benefits)
-  - [Applications](#applications)
   - [Citations](#citations)
